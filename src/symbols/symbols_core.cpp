@@ -120,6 +120,7 @@ namespace detail {
           return nothing::resolve_frames(frames);
          #endif
         #endif
+        return {};
     }
 
     std::vector<stacktrace_frame> resolve_frames(const std::vector<frame_ptr>& frames) {
@@ -151,6 +152,7 @@ namespace detail {
           return nothing::resolve_frames(frames);
          #endif
         #endif
+        return {};
     }
 }
 CPPTRACE_END_NAMESPACE
